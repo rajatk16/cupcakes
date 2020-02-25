@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>
+    Cupcakes
+  </title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg" style="background-color:pink">
+    <a href="/" class="navbar-brand">Cupcakes</a>
+  </nav>
+  <div class="container">
+    <div class="mt-5">
+      <h3>
+        List of Cupcakes!
+      </h3>
+      <ul id="cupcakes-list"></ul>
+    </div>
+    <hr>
+    <div>
+      <h3>Add a New Cupcake</h3>
+      <form id="new-cupcake-form">
+        <div class="form-group">
+          <label for="flavor">
+            Flavor
+          </label>
+          <input type="text" name="flavor" id="flavor" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="size">
+            Size
+          </label>
+          <input type="text" name="size" id="size" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="rating">
+            Rating
+          </label>
+          <input type="text" name="rating" id="rating" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="image">
+            Image
+          </label>
+          <input type="text" name="image" id="image" class="form-control">
+        </div>
+        <button class="btn btn-success">Add</button>
+      </form>
+    </div>  
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+  <script src="/static/cupcake.js"></script>
+</body>
+</html>
